@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: com.ibm.test.TestEmpDept
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec <<< FAILURE!
+com.ibm.test.TestEmpDept.testSaveDept()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "com.ibm.dao.EmpDeptDao.addDept(com.ibm.entity.Department)" because "com.ibm.test.TestEmpDept.dao" is null
+	at com.ibm.test.TestEmpDept.testSaveDept(TestEmpDept.java:24)
+
+com.ibm.test.TestEmpDept.testSaveEmp()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "com.ibm.dao.EmpDeptDao.addEmp(com.ibm.entity.Employee, int)" because "com.ibm.test.TestEmpDept.dao" is null
+	at com.ibm.test.TestEmpDept.testSaveEmp(TestEmpDept.java:31)
+
+com.ibm.test.TestEmpDept.testFindDept()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "com.ibm.dao.EmpDeptDao.findDept(int)" because "com.ibm.test.TestEmpDept.dao" is null
+	at com.ibm.test.TestEmpDept.testFindDept(TestEmpDept.java:36)
+
